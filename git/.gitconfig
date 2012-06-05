@@ -1,0 +1,96 @@
+# Many goodies from here and all around http://stackoverflow.com/questions/267761/what-does-your-gitconfig-contain
+
+[user]
+	name = Ran Tavory
+	email = rantav@gmail.com
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[alias]
+  st = status
+  # diff stats
+  ds = !git --no-pager diff --stat -M -w
+  ci = commit
+  br = branch
+  co = checkout
+  w = whatchanged
+  # Visual Diff tool (Diff all changed files at the same time)
+  vdiff = !git-diff-all.sh
+  # show list of contributors in descending order by number of commits
+  rank = shortlog -sn --no-merges
+  # given any git object, try to show it briefly
+  whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+  # Search for a given string in all patches and print commit messages
+  # example: search for any commit that adds or removes string "foobar"
+  #     git searchcommits foobar
+  # example: search commits for string "foobar" in directory src/lib
+  #     git searchcommits foobar src/lib
+  # example: search commits for "foobar", print full diff of commit with 1 line context
+  #     git searchcommits foobar --pickaxe-all -U1 src/lib
+  searchcommits = "!f() { query=\"$1\"; shift; git log -S\"$query\" \"$@\"; }; f \"$@\""
+  # Change log in a compact format
+  changes = log --oneline --reverse
+  # shows a nice graph of branches/merges
+  graph = log --graph --pretty=format:'%C(red)%h%C(reset) %C(yellow)%d%C(reset)%s %C(green)%an %C(bold black)%cr%C(reset)' --abbrev-commit --date=relative
+  # list of tags
+  tags = tag -n1 -l
+  # After I accidentally commit too much and want to roll back the commit but keep the changes:
+  uncommit = reset --soft HEAD^
+  # Amend last commit's message
+  amend = commit --amend
+  # The usual push command
+  ps = push origin master
+  # The usual pull command with a --rebase b/c that's how I like it
+  pl = pull --rebase origin master
+
+[diff]
+  tool = diffmerge
+
+[difftool "diffmerge"]
+  cmd = "diffmerge" "$LOCAL" "$REMOTE"
+  
+[merge]
+  tool = diffmerge
+
+[mergetool "diffmerge"]
+  cmd = "diffmerge" -3 -merge -wait "$LOCAL" "$BASE" "$REMOTE" "$MERGED"
+  trustExitCode = false
+
+[core]
+  pager = less -FRSX
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[apply]
+  whitespace = fix
+
+[sendemail]
+        # gmail
+#	smtpserver = smtp.gmail.com
+#	smtpserverport = 587
+#	smtpencryption = tls
+#	smtpuser = rantav@gmail.com
+#
+[heroku]
+	account = rantav

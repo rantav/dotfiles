@@ -1,0 +1,46 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/" . "ran/")
+ ("/Users/ran/dev/overtone/overtone-project/src/" . "overtone_project/")
+ ("/Users/ran/dev/overtone/overtone-project/" . "src/")
+ ("/Users/ran/dev/overtone/" . "overtone-project/")
+ ("/Users/ran/dev/" . "overtone/")
+ ("/Users/ran/" . "dev/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/ran/dev/overtone/overtone-project/"
+ "/Users/ran/dev/overtone/overtone-project/src/overtone_project/"
+ "/Users/ran/.cake/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "project.clj"
+ "core.clj"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/ran/dev/overtone/overtone-project/" (20411 35873) "test/" "src/" "project.clj" "lib/" "classes/" "build/" ".gitignore" ".cake/" "../" "./")
+
+ ("/Users/ran/dev/" (20399 30924) "totango-sdr-analysis/" "tmp/" "thriftify/" "tg/" "scoompa/" "saaspulse/" "recipitor-frontend/" "recipitor/" "overtone-projects/" "overtone/" "outbrain/" "local.repository/" "invi-backend/" "invi/" "GluFeeder/" "glu_client/" "glu-yaml/" "glu-scripts-contrib/" "glu/" "eclipse.preferences" "codeduel/" "best_in_place/" "anan/" ".metadata/" ".DS_Store" "../" "./")
+
+ ("/Users/ran/" (20411 36259) "zip" "wedding-invite.xcf" "wedding-invite.jpg" "wc" "vim/" "train.sh" "tmp/" "tig/" "test.py" "start-tomcat.sh" "Sites/" "shutdown-tomcat.sh" "ServiceLoginAuth" "Public/" "profile-tomcat.sh" "prettyprint.me/" "Pictures/" "pgadmin.log" "not-dropbox/" "NetBeansProjects/" "Music/" "Movies/" "mine.html" "mindterm/" "mbox" "local/" "Library/" "htmlpage.sh" "Homebrew.terminal" "groovy-engine.jar" "groovy-1.7.4.jar" "googles.html" "Google Drive/" "glu.json" "gan.xcf" "gan.jpg" "eval.sh" "Dropbox/" "Downloads/" "Documents/" "dev/" "Desktop/" "cotendo.jar" "Calibre Library/" "build.xml" "bin/" "Applications/" "apiuser.pem" "antlib.xml" "addressbook.sh" ".zshrc.orig" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump" ".yjp/" ".xnviewmp/" ".Xcode/" ".Xauthority" ".x.js.swp" ".wireshark-etc/" ".wireshark/" ".vimrc" ".viminfz.tmp" ".viminfo.tmp" ".viminfo" ".vim/" ".Trash/" ".titanium/" ".thumbnails/" ".subversion_IDEA/" ".subversion/" ".ssh/" ".squirrel-sql/" ".sqliterc" ".sqlite_history" ".smex-items" ".slime-history.eld" ".sh_history" ".serverauth.8692" ".serverauth.84077" ".serverauth.4952" ".serverauth.43780" ".serverauth.3891" ".serverauth.3752" ".serverauth.18566" ".sdrlogs/" ".screenrc" ".scala_history" ".S60_prompt" ".rvmrc" ".rvm/" ".rightscale/" ".recently-used.xbel" ".recentf" ".rdebugrc" ".rdebug_hist" ".qt/" ".python-eggs/" ".putty/" ".pry_history" ".profile.pysave" ".profile.macports-saved_2009-06-01_at_23:38:15" ".profile" ".post-review-cookies.txt" ".pgpass" ".pgadmin_histoqueries" ".overtone/" ".org.linkedin.glu/" ".org.eclipse.epp.usagedata.recording.userId" ".openshift/" ".oh-my-zsh/" ".nx/" ".netbeans-derby/" ".netbeans/" ".nchsoftware/" ".nbprofiler/" ".mplayer/" ".macports/" ".m2/" ".lesshst" ".lein/" ".keystore" ".kdiff3rc" ".jline-clojure.main.history" ".jline-clojure.lang.Repl.history" ".java_history" ".ivy2/" ".itmstransporter/" ".irbrc" ".irb-history" ".inputrc" ".ido.last" ".idlerc/" ".htoprc" ".hivehistory" ".heroku/" ".groovy/" ".grails/" ".gradle/" ".googlecl/" ".gitk" ".gitconfig" ".gimp-2.6/" ".gem/" ".gdbmem" ".gdbinit" ".gdb_history" ".fonts/" ".FontForge/" ".fontconfig/" ".emacs.old" ".emacs.d.old/" ".emacs.d/" ".eclipse_keyring" ".eclim/" ".ec2/" ".DS_Store" ".dropbox/" ".dotcloud/" ".deltafy/" ".dbshell" ".datastudio/" ".cups/" ".ctierrc.orig" ".ctierrc" ".config/" ".clj_completions" ".cheat/" ".CFUserTextEncoding" ".cassandra.history" ".cake/" ".bundler/" ".bitrock/" ".bashrc" ".bash_history" ".argouml/" ".appcfg_nag" ".appcfg_cookies" ".ant/" ".android/" ".adobe/" ".ackrc" "../" "./")
+
+ ("/Users/ran/dev/overtone/overtone-project/src/overtone_project/" (20386 62772) "core.clj" "../" "./")
+
+ ("/Users/" (19857 28200) "Shared/" "ran/" ".localized" "../" "./")
+
+ ("/Users/ran/dev/overtone/overtone-project/src/" (20386 61734) "overtone_project/" "../" "./")
+
+ ("/Users/ran/.cake/" (20386 62035) "templates/" "run/" "project.clj" "lib/" "classes/" "build/" ".cake/" "../" "./")
+
+ ("/Users/ran/dev/overtone/" (20386 61749) "overtone-project/" "live-coding-emacs/" ".gitignore" ".git/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
