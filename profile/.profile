@@ -119,8 +119,18 @@ alias mongo-run='mongod run --config /usr/local/Cellar/mongodb/mongod.conf'
 # Add ~/bin to the path
 export PATH=$HOME/bin:$PATH
 
-# Run a python server to serve local directory content as web on localhost:8000
-alias python-serve-local-directory="python -m SimpleHTTPServer"
+# Start an HTTP server from a directory, optionally specifying the port
+# Example: 
+# $ server
+# Or:
+# $ server 8002
+function server() {
+  local port="${1:-8000}"
+  (sleep 0.5; open "http://localhost:${port}")&
+  # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
+  # And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
+  python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
+}
 
 export GLU_USER=xxx
 export GLU_PASS=xxx
