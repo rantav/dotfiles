@@ -83,6 +83,7 @@ Plug 'juliosueiras/vim-terraform-completion'
 Plug 'elzr/vim-json'
 Plug 'godoctor/godoctor.vim'
 Plug 'scrooloose/nerdcommenter'
+
 " prevent concealing of json
 let g:vim_json_syntax_conceal = 0
 
@@ -215,7 +216,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set inccommand=split "nvim live %s/../
+"set inccommand=split "nvim live %s/../
 
 "" Directories for swp files
 set nobackup
@@ -590,7 +591,7 @@ endfunction
 let g:go_list_type = "quickfix"
 let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 1
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
 let g:go_highlight_types = 1
@@ -637,6 +638,7 @@ augroup go
 
 augroup END
 
+:set colorcolumn=100
 
 " javascript
 let g:javascript_enable_domhtmlcss = 1
