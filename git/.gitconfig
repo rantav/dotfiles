@@ -1,8 +1,8 @@
 # Many goodies from here and all around http://stackoverflow.com/questions/267761/what-does-your-gitconfig-contain
 
 [user]
-	name = Ran Tavory
-	email = rantav@gmail.com
+  name = Ran Tavory
+  email = rantav@gmail.com
 
 [color]
   diff = auto
@@ -95,13 +95,3 @@
 
 [apply]
   whitespace = fix
-
-[sendemail]
-        # gmail
-#	smtpserver = smtp.gmail.com
-#	smtpserverport = 587
-#	smtpencryption = tls
-#	smtpuser = rantav@gmail.com
-#
-[heroku]
-	account = rantav
