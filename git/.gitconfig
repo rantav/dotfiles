@@ -1,8 +1,8 @@
 # Many goodies from here and all around http://stackoverflow.com/questions/267761/what-does-your-gitconfig-contain
 
 [user]
-  name = Ran Tavory
-  email = rantav@gmail.com
+	name = Ran Tavory
+	email = rantav@appsflyer.com
 
 [color]
   diff = auto
@@ -69,11 +69,11 @@
   cob = checkout -b
   cm = !git add -A && git commit -m
   save = !git add -A && git commit -m 'SAVEPOINT'
-  wip = !git add -u && git commit -m "WIP" 
+  wip = !git add -u && git commit -m "WIP"
   undo = reset HEAD~1 --mixed
   amend = commit -a --amend
   wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-  bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+  bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
   bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
 
 [diff]
@@ -81,7 +81,7 @@
 
 [difftool "diffmerge"]
   cmd = "diffmerge" "$LOCAL" "$REMOTE"
-  
+
 [merge]
   tool = diffmerge
 
@@ -95,3 +95,8 @@
 
 [apply]
   whitespace = fix
+
+[heroku]
+	account = rantav
+[credential]
+	helper = osxkeychain
