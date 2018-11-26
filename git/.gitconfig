@@ -1,8 +1,8 @@
 # Many goodies from here and all around http://stackoverflow.com/questions/267761/what-does-your-gitconfig-contain
 
 [user]
-	name = Ran Tavory
-	email = rantav@appsflyer.com
+  name = ... # Your name, e.g. Ran Tavory
+  email = ... # Your email e.g. rantav@gmail.com
 
 [color]
   diff = auto
